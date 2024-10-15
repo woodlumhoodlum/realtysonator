@@ -45,8 +45,6 @@ const MobileNav = () => {
                              <ul className="header-nav_elements">
                                 {navLinks.slice(0, 6).map((link) => {
                                     const isActive = link.route === pathname
-                                    console.log(isActive + " what");
-                                    console.log("link label is" + link.label);
                                     return (
                                     <li key={link.route} 
                                         className={`${isActive && 'gradient-text'} p-18 flex whitespace-nowrap text-dark-700`}
